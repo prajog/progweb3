@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <form action="" method="post">
+                <fieldset>
+
+                    <h1> Cadastrar usuário </h1>
+                    <label><span>1 </span> Dados pessoais</label>
+
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="txtnome" id="nome" />
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="txtemail" id="email" />
+                    </div>
+
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="txtsenha" id="senha" />
+                    </div>
+
+                    <div>
+                        <label for="confirmasenha">Confirma senha:</label>
+                        <input type="password"  name="txtconfirmasenha"id="confirmasenha" />
+                    </div>
+
+                    <div>
+                        <label for="">Idade:</label> <br>
+                        <input type="radio" name="radio_acima17" id="acima17" value="acima17"> <label for="acima17">Acima 17</label><br>
+                        <input type="radio" name="radio_acima17" id="abaixo17" value="abaixo17"> <label for="abaixo17">Abaixo ou igual 17</label>
+                    </div>
+                
+                    <label><span>2 </span> Perfil</label>
+
+                    <div>
+                        <label for="descricao">Descrição:</label><br>
+                        <textarea name="txtdescricao" rows="3" cols="43" id="descricao"></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="perfil">Perfil trabalho:</label><br>
+                        <select name="trabalho" id="perfil">
+                            <option value="frontend" selected>Front-End Developer</option>
+                            <option value="backend">Back-End Developer</option>
+                            <option value="fullstack">Full Stack Developer</option>
+                        </select>
+                    </div>
+
+                    <div>   
+                        <label for="">Interesses:</label><br>
+                        <input type="checkbox" id="prog"/> Programador <br>
+                        <input type="checkbox" id="design"/> Design <br>
+                        <input type="checkbox" id="analista"/> Analista
+                    </div>
+
+                    <div><button type="submit">Enviar dados</button></div>
+                    
+                </fieldset>
+
+            </form>
+        </div>
+    </body>
+</html>
